@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Rock Papper Scissors</title>
     <link rel="stylesheet" href="index.css">
 
 </head>
 <body>
-    <h1>Rock - Paper - Scissors</h1>
+    <h1>Rock - Papper - Scissors</h1>
 
     <div class="choices">
         <button onclick="playGame('rock')">👊</button>
@@ -18,7 +16,16 @@
     
     <div id="playerDisplay">PLAYER: </div>
     <div id="computerDisplay">COMPUTER: </div>
-    <div id="resultDisplay">IT'S A TIE!</div>
+    <div id="resultDisplay"></div>
+
+
+    <div class="scoreDisplay">Player Score:
+        <span playerScoreDisplay>0</span>
+    </div>
+    
+    <div class="scoreDisplay">Computer Score:
+        <span ComputerScoreDisplay>0</span>
+    </div>
 
     
     <script src="index.js"></script>
