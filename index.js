@@ -1,6 +1,6 @@
-const choices = ["rock", "paper", "scissors"];
-const playerDisplay = document.getElementById("playerDisplay");
-const computerDisplay = document.getElementById("computerDisplay");
+const choices = ["Rock", "Paper", "Scissors"];
+const playerDisplay = document.getElementById("PlayerDisplay");
+const computerDisplay = document.getElementById("ComputerDisplay");
 let resultDisplay = document.getElementById("resultDisplay");
 const playerScoreDisplay = document.getElementById("playerScoreDisplay")
 const ComputerScoreDisplay = document.getElementById("ComputerScoreDisplay")
@@ -12,22 +12,22 @@ function playGame(playerChoice) {
     let result = "";
     
     if (playerScore === 5 || computerScore === 5) {
-        playerScore === 5 ? resultDisplay.textContent = "player wins, click play again" : computerScore === 5 ? resultDisplay.textContent = "Computer wins, click play again" : undefined;         
+        playerScore === 5 ? resultDisplay.textContent = "Player wins, Click play again" : computerScore === 5 ? resultDisplay.textContent = "Computer wins, Click play again" : undefined;         
     } else {
         if (playerChoice === computerChoice) {
             result = "IT'S A TIE!";
         } else {
             switch(playerChoice){
-                case "rock":
-                    result = (computerChoice === "scissors") ? "YOU WIN" : "YOU LOSE";
+                case "Rock":
+                    result = (computerChoice === "Scissors") ? "YOU WIN" : "YOU LOSE";
                     break; 
     
-                case "paper":
-                    result = (computerChoice === "rock") ? "YOU WIN" : "YOU LOSE";
+                case "Paper":
+                    result = (computerChoice === "Rock") ? "YOU WIN" : "YOU LOSE";
                     break;
                 
-                case "scissors":
-                    result = (computerChoice === "paper") ? "YOU WIN" : "YOU LOSE";
+                case "Scissors":
+                    result = (computerChoice === "Paper") ? "YOU WIN" : "YOU LOSE";
                     break; 
             }
         }
@@ -53,7 +53,7 @@ function playGame(playerChoice) {
         console.log("playerScore: " + playerScore);
         console.log("computerScore: " + computerScore )
     
-        playerScore === 5 ? resultDisplay.textContent = "player wins, click play again" : computerScore === 5 ? resultDisplay.textContent = "Computer wins, click play again" : undefined;         
+        playerScore === 5 ? resultDisplay.textContent = "Player wins, Click play again" : computerScore === 5 ? resultDisplay.textContent = "Computer wins, Click play again" : undefined;         
     }
 
 }
