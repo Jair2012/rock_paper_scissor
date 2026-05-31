@@ -27,7 +27,7 @@ h1 {
     margin-bottom: 10px;
     margin-left: 0px;
     margin-right: 0px;
-    border-radius: 200px;
+    border-radius: 250px;
     background-color: hsl(200, 100%, 50%);
     cursor: pointer;
     transition: scale(0.95);
